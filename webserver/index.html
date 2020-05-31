@@ -1,0 +1,38 @@
+<html>
+<head>
+    <script src="./java.js"></script>
+    <style>
+        .livechat{max-width: 400; height: 200; margin: auto; position: relative; border: lightgrey; border-width: 1pt; border-style: solid;}
+        .messagecontainer{padding-top: 5pt; width: 96%; height: 80%; margin:auto; overflow: auto; overflow-x: hidden; word-wrap: break-word;}
+        .message{padding-bottom: 5pt; width: 97%;}
+
+        .sendmessage{width: 96%; bottom: 0; position: absolute; left: 2%; right: 2%; bottom: 2%; display: flex; justify-content: space-between;}
+        .eingabe{width: 72%; border-radius: 1px; margin-right: 5pt;}
+        .sendbtn{width: 20%; text-align: center; top: 0; margin-right: 5pt;}
+        .optionsbtn{display: flex inline; justify-content: center;}
+        .optionsimg{margin: auto; width: 10pt; height: 10pt;}
+    </style>
+</head>
+<body>
+
+    <div class="livechat">
+        <div id="messages" class="messagecontainer">
+            <div class="message">Marlon: Gehts?</div>
+            <div class="message">Marlon: Ich glaube schon</div>
+            <div class="message">Marlon: Das hier soll ein mega langer text werden</div>
+        </div>
+        <div class="sendmessage">
+            <input id="eingabe" type="text" placeholder="Eine Nachricht schreiben" value="" class="eingabe" >
+            <button class="sendbtn" onclick="sendMessage()">Senden</button>
+            <button class="optionsbtn" onclick="showOptions()"><img src="options.png" class="optionsimg"></button>
+        </div>
+    </div>
+
+    <script>
+        "use strict" 
+        setInterval(requestServer, 10000);
+        let eingabe = document.getElementById("eingabe");
+        eingabe.addEventListener("keyup", keylistenerEingabe);
+    </script>
+</body>
+</html>
