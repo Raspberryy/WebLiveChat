@@ -1,0 +1,195 @@
+
+/*Simulate Wordpress*/
+
+@media only screen 
+and (max-device-width : 767px) /*Phones*/
+and (orientation : landscape) { 
+ 	div.main {
+		height: 150vh !important;
+	  }
+
+	div.sendmessage{
+		flex-wrap: wrap !important;
+		height: 50pt !important;
+	}
+
+	input.optionelement{
+		height: 25pt !important;
+		margin-bottom: 4pt !important;
+		padding: unset;
+	}
+}
+
+@media only screen 
+and (max-device-width : 640px) /*Phones*/
+{ 
+	div.sendmessage{
+		flex-wrap: wrap !important;
+		height: 50pt !important;
+	}
+
+	input.optionelement{
+		height: 25pt !important;
+		margin-bottom: 4pt !important;
+		padding: unset;
+	}
+}
+
+
+@media only screen and (min-width:1550px){
+	div.main {
+	flex-direction: row !important;
+	width: 100% !important;
+	}
+
+	div.stream2020 {
+		margin: auto !important;
+	}
+
+	div.livechat {
+		/*! flex-grow: 0 !important; */
+		width: 20% !important;
+		margin-left: 10pt !important;
+		/*! height: 100% !important; */
+	
+	}
+
+	div.message{
+		font-size: 80% !important;
+	}	
+}
+
+.page-id-1349 div.section-inner{
+	width: 97%;
+	max-width: unset;
+}
+
+.main {
+	padding-top:100pt;
+	margin: auto !important;
+	
+	display: flex !important;
+	flex-direction: column !important;
+}
+
+/* I Frame Stuff */
+	.stream2020{
+		overflow: hidden !important;
+		position: relative !important;
+		padding-top: 56.25% !important;
+		width: 100% !important;
+		max-width: 1280px !important;
+		margin-bottom: 30pt !important;
+		flex-shrink: 0;
+		
+		/*! flex-grow: 0 !important; */
+
+	}
+
+	.stream2020 img{
+		position: absolute !important;
+		height: 100% !important;
+		width: 100% !important;
+		top: 0 !important;
+		left: 0 !important;
+		max-height: 720px !important;
+	}
+
+/* Chat */
+
+.livechat {
+	width: 95% !important; 
+	border: lightgrey !important; 
+	border-width: 1pt !important; 
+	border-style: solid !important;
+	
+	display: flex !important;
+	align-content: center !important;
+	flex-direction: column !important;
+	
+	min-height: 300pt;
+	max-height: 700px;
+	}
+	
+.messagecontainer{
+	padding-top: 5pt !important; 
+	width: 96% !important; 
+	margin:auto !important; 
+	overflow: auto !important; 
+	overflow-x: hidden !important; 
+	word-wrap: break-word !important;
+	
+	flex-grow: 1 !important;
+	}
+	
+.message{
+	padding-bottom: 5pt !important; 
+	width: 97% !important;
+	}
+
+.optionsmenu{
+	padding-top: 5pt !important; 
+	width: 96% !important; 
+	margin:auto !important; 
+	display: flex; 
+	align-items: center !important; 
+	text-align: center !important;
+	flex-direction: column !important;
+	
+	
+	flex-grow: 1 !important;
+	}
+	
+.optionelement{
+	font-size: 80% !important;
+}
+
+.sendmessage{
+	width: 96% !important; 
+	margin:auto !important; 
+	display: flex !important; 
+	height: 35pt !important;
+	margin-bottom: 7pt !important;
+
+	flex-wrap: wrap !important;
+	height: 50pt !important;
+	}
+	
+.eingabe{
+	width: 72% !important; 
+	border-radius: 1px !important; 
+	margin-right: 5pt !important;
+	font-size: 105% !important;
+	flex: 0 0 98% !important;
+	font-size: 70% !important;
+	height: 25pt !important;
+	margin-bottom: 4pt !important;
+	padding: 0 !important;
+	padding-top: 10px !important;
+	padding-left: 5px !important;
+	}
+	
+	
+.sendbtn{
+	flex-grow: 1 !important;
+	height: 20pt !important;
+	text-align: center !important; 
+	margin-right: 5pt !important;
+	-webkit-appearance: none !important;
+	padding: unset;
+	}
+	
+.optionsbtn{
+	-webkit-appearance: none !important;
+	padding: unset;
+	}
+	
+img.optionsimg{
+	margin: auto !important; 
+	width: 15pt !important; 
+	height: 12pt !important;
+	}
+
+.blog-menu {
+ justify-content: center;
+}

@@ -1,0 +1,44 @@
+.livechat { 
+    max-width: 800pt; 
+    margin: auto;  
+    border: lightgrey; 
+    border-width: 1pt; 
+    border-style: solid;
+    margin-bottom: 30pt;
+}
+
+.messagecontainer {
+    padding-top: 5pt; 
+    width: 100%; 
+    display: table;
+    table-layout: fixed;
+    margin:auto; 
+    word-wrap: break-word;
+    border-spacing: 0.5em;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.customtr{
+    display: table-row;
+    border: 1px solid black;
+}
+
+.customtc {
+    display: table-cell;
+    margin-right: 10pt;
+    margin-left: 10pt;
+    margin-bottom: 25pt;
+    text-align: start; 
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+.customtr div{
+    float: left;
+    max-width: 60%;
+}
+
+.customtr input{
+    float: right;
+}

@@ -221,7 +221,7 @@ function sendMessage(){
         
     // Create AJAX Request
         requestSendMsg = new XMLHttpRequest();
-        requestSendMsg.open("POST", "reqmsgs.php", true); // URL for HTTP-GET 
+        requestSendMsg.open("POST", "http://localhost/reqmsgs.php", true); // URL for HTTP-GET 
         requestSendMsg.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");       
         requestSendMsg.send("username=" + encodeURIComponent(currentname) + "&msg=" + encodeURIComponent(eingabe.value));  
 
